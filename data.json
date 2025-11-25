@@ -1,0 +1,131 @@
+{
+  "categorias": [
+    {
+      "nombre": "Frutas",
+      "descripcion": "Frutas frescas y de temporada",
+      "subcategorias": [
+        {
+          "id": "tropicales",
+          "nombre": "Tropicales"
+        },
+        {
+          "id": "citricos",
+          "nombre": "Cítricos"
+        }
+      ]
+    },
+    {
+      "nombre": "Verduras",
+      "descripcion": "Verduras frescas para consumo diario",
+      "subcategorias": [
+        {
+          "id": "hojas",
+          "nombre": "De hoja"
+        },
+        {
+          "id": "raices",
+          "nombre": "De raíz"
+        }
+      ]
+    }
+  ],
+  "productos": [
+    {
+      "id": "mango",
+      "nombre": "Mango Tommy",
+      "descripcion": "Fruta tropical dulce, ideal para jugos y ensaladas.",
+      "precioPorKilo": 4500,
+      "unidadMedida": [
+        "kilo",
+        "libra"
+      ],
+      "imagenes": [
+        "https://cdn.ejemplo.com/mango.jpg"
+      ],
+      "categoriaId": "frutas",
+      "subcategoriaId": "tropicales",
+      "stockDisponible": 210,
+      "origen": "Urabá, Antioquia"
+    },
+    {
+      "id": "naranja",
+      "nombre": "Naranja Valencia",
+      "descripcion": "Fruta cítrica rica en vitamina C y jugos naturales.",
+      "precioPorKilo": 3200,
+      "unidadMedida": [
+        "kilo",
+        "libra"
+      ],
+      "imagenes": [
+        "https://cdn.ejemplo.com/naranja.jpg"
+      ],
+      "categoriaId": "frutas",
+      "subcategoriaId": "citricos",
+      "stockDisponible": 150,
+      "origen": "Tolima"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "andres",
+      "nombre": "Andrés Sánchez",
+      "email": "andres@mail.com",
+      "passwordHash": "12345seguro",
+      "direccion": {
+        "ciudad": "Medellín",
+        "barrio": "San Javier",
+        "direccion": "Calle 50 #80-23"
+      },
+      "telefono": "3001234567",
+      "fechaRegistro": "2025-10-01T00:00:00Z"
+    }
+  ],
+  "carritos": [
+    {
+      "usuarioId": "andres",
+      "items": [
+        {
+          "productoId": "mango",
+          "cantidad": 1.5,
+          "unidadMedida": "kilo",
+          "precioUnitarioPorKilo": 4500,
+          "subtotal": 6750
+        }
+      ],
+      "fechaCreacion": "2025-10-01T00:00:00Z",
+      "estado": "finalizado"
+    }
+  ],
+  "ordenes": [
+    {
+      "usuarioId": "andres",
+      "items": [
+        {
+          "productoId": "mango",
+          "cantidad": 2,
+          "unidadMedida": "kilo",
+          "precioUnitario": 4500,
+          "subtotal": 9000
+        }
+      ],
+      "total": 9000,
+      "direccionEntrega": "Calle 50 #80-23, Medellín",
+      "fechaOrden": "2025-10-01T00:00:00Z",
+      "estado": "pendiente"
+    }
+  ],
+  "items": [
+    {
+      "id": "b443431b-4cc7-4761-aacf-241e9461c79f",
+      "name": "Papaya",
+      "description": "Fruta tropical dulce",
+      "price": 2500
+    },
+    {
+      "id": "1a306d04-083e-42ec-9704-a118e934501f",
+      "name": "Banano",
+      "description": "Fruta acida",
+      "price": 300
+    }
+  ]
+}
