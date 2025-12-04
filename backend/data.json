@@ -126,6 +126,12 @@
       "name": "Banano",
       "description": "Fruta acida",
       "price": 300
+    },
+    {
+      "id": "fc74b9a0-aa73-4f97-9d47-9a4a00751f18",
+      "name": "Pera",
+      "description": "Fruta verde para acompañar a tus ensaladas",
+      "price": 3000
     }
   ]
 }
